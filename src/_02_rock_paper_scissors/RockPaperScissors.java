@@ -3,6 +3,7 @@
 
 package _02_rock_paper_scissors;
 
+import java.util.Random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -73,14 +74,14 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+    	int opponentSelection = 0;
         //1. Run the program and play many rounds of Rock Paper Scissors. Does the computer always choose the same thing?
-
+    	Random ran = new Random();
         //2. Change the value of opponentSelection to be a random number between 0 and 2;
 	//   Don't forget to create a Random object.
-	    
+    	opponentSelection = ran.nextInt(3);
         //2. Change the value of opponentSelection to be a random number between 0 and 2; 
-        int opponentSelection = 0;
+        
         
         //3. Run the program again. Is the result different?
  
